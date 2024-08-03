@@ -45,7 +45,7 @@ class Character {
 
                     if (this.jumpCounter >= 15) {
                         gameOver = true;
-                        alert('Congratulations! You won!');
+                        alert('ΜΠΡΑΒΟ ΘΑΡΑ ΚΕΡΔΙΘΑΜΕ!');
                         resetGame();
                         return;
                     }
@@ -135,7 +135,7 @@ function gameLoop() {
             character.y < obstacle.y + obstacle.height &&
             character.y + character.height > obstacle.y) {
             gameOver = true;
-            alert('Game Over! Click OK to try again.');
+            alert('Πω χάθαμε... Δεν πειράδει πάμε κθανά!');
             resetGame();
             return;
         }
